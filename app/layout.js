@@ -26,9 +26,8 @@ export default function
       >
         <Header />
         <StairTransition />
-        <PageTransition>
+        <PageTransition className="container">
           {children}
-
         </PageTransition>
       </body>
     </html>
