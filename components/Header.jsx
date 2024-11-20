@@ -15,7 +15,7 @@ export default function Header(second) {
                 <div className="hidden xl:flex items-center gap-8">
                     <Nav />
                     <Link href={'/contact'}>
-                        <Button>Hire Me</Button>
+                        <Button className="hover:opacity-85">Hire Me</Button>
                     </Link>
                 </div>
 
