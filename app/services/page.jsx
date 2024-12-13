@@ -1,5 +1,7 @@
 "use client";
 
+import { TitleSection } from "@/components/TitleSection";
+
 const services = [
     {
         num: '01',
@@ -12,12 +14,10 @@ const services = [
 export default function Services() {
     return (
         <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0" id="services">
+            <TitleSection text={"Our Services "} />
             <div className="container mx-auto">
                 <div class="grid md:grid-cols-2 gap-12">
                     <div class="lg:w-3/4">
-                        <h2 class="text-3xl text-gray-300 font-bold lg:text-4xl dark:text-white">
-                            Our Services
-                        </h2>
                         <p class="mt-3 text-gray-300 dark:text-neutral-400">
                             We help businesses bring ideas to life in the digital world, by designing and implementing the technology tools that they need to win.
                         </p>

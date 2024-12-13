@@ -1,15 +1,17 @@
 import Services from "./services/page";
-import Resume from "./resume/page";
+import Projects from "./projects/page";
 import Hero from "./hero/page";
-import Work from "./work/page";
+import Experiences from "./experiences/page";
+import Contact from "./contact/page";
 
 export default function Home() {
   return (
     <section className="h-full">
       <Hero />
       <Services />
-      <Resume />
-      <Work/>
+      <Projects />
+      <Experiences/>
+      <Contact/>
     </section>
   );
 }
