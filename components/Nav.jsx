@@ -2,7 +2,6 @@
 
 import { links } from "@/lib/links";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 export default function Nav() {
@@ -11,11 +10,14 @@ export default function Nav() {
     useEffect(() => {
         const sections = links.map((link) => document.querySelector(link.path));
 
+        console.log(sections);
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
+                    console.log(entry)
                     if (entry.isIntersecting) {
-                        setActiveSection(entry.target.id); // Update active section
+                        setActiveSection(entry.target.id);
+                        // console.log(entry.target.id);      
                     }
                 });
             },

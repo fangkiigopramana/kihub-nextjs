@@ -3,7 +3,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 export default function Experiences() {
     return (
-        <section className="h-full">
+        <section className="h-full" id="experiences">
             <TitleSection text=" Experiences " />
             <div className="container h-full mt-10">
                 <ol class="relative border-s border-gray-200 dark:border-gray-700">

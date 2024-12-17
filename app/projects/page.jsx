@@ -1,86 +1,38 @@
+"use client";
+
 import { TitleSection } from "@/components/TitleSection";
 import { NeonGradientCard } from "@/components/ui/neon-gradient-card";
+import { FaArrowRight, FaDemocrat, FaPlay } from "react-icons/fa";
 
 export default function Projects() {
     return (
-        <div id="projects">
-            <TitleSection text=" Project List " />
+        <section
+            className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0"
+            id="projects"
+        >
+            <TitleSection text="Projects " />
             <div className="max-w-6xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-                <div className="grid sm:grid-cols-12 gap-6">
-                    <NeonGradientCard className="sm:self-end col-span-12 sm:col-span-7 md:col-span-8 lg:col-span-5 lg:col-start-3">
-                        <a
-                            className="group relative block rounded-xl overflow-hidden focus:outline-none"
-                            href="#"
-                        >
-                            <div className="relative w-full h-0 pb-[56.25%] sm:pb-0 sm:h-[350px] rounded-xl overflow-hidden">
-                                <img
-                                    className="absolute top-0 left-0 w-full h-full object-cover group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-xl"
-                                    src="https://images.unsplash.com/photo-1606868306217-dbf5046868d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
-                                    alt="Masonry Cards Image"
-                                />
-                            </div>
-                            <div className="absolute bottom-0 start-0 end-0">
-                                <div className="text-sm font-semibold text-white rounded-lg bg-gray-800 p-4 md:text-xl dark:bg-neutral-800 dark:text-neutral-200">
-                                    Workplace personalities
-                                </div>
-                            </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+                {Array(8).fill(null).map((_, index) => (
+                    <div class="w-md p-6 bg-gray-800 shadow dark:bg-gray-800 rounded">
+                        <p class="mb-3 font-bold text-sm text-yellow-400 dark:text-gray-400">Web</p>
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-300 dark:text-white">Barcode App</h5>
                         </a>
-                    </NeonGradientCard>
-
-
-                    <NeonGradientCard className="sm:self-end col-span-12 sm:col-span-5 md:col-span-4 lg:col-span-3">
-                        <a className="group relative block rounded-xl overflow-hidden focus:outline-none" href="#">
-                            <div className="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
-                                <img className="group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="https://images.unsplash.com/photo-1605629921711-2f6b00c6bbf4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80" alt="Masonry Cards Image" />
-                            </div>
-                            <div className="absolute bottom-0 start-0 end-0">
-                                <div className="text-sm font-semibold text-white rounded-lg bg-gray-800 p-4 md:text-xl dark:bg-neutral-800 dark:text-neutral-200">
-                                    Women in engineering
-                                </div>
-                            </div>
+                        <p class="mb-3 font-normal text-sm text-blue-200 dark:text-gray-400">React, Tailwind, React-QR, Node</p>
+                        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-accent rounded gap-3">
+                            Demo
+                            <FaArrowRight />
                         </a>
-                    </NeonGradientCard>
-
-                    <NeonGradientCard className="col-span-12 sm:col-span-6 md:col-span-4">
-                        <a className="group relative block rounded-xl overflow-hidden focus:outline-none" href="#">
-                            <div className="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
-                                <img className="group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="https://images.unsplash.com/photo-1598929438701-ef29ab0bb61a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80" alt="Masonry Cards Image" />
-                            </div>
-                            <div className="absolute bottom-0 start-0 end-0">
-                                <div className="text-sm font-semibold text-white rounded-lg bg-gray-800 p-4 md:text-xl dark:bg-neutral-800 dark:text-neutral-200">
-                                    Pride 2021
-                                </div>
-                            </div>
-                        </a>
-                    </NeonGradientCard>
-
-                    <NeonGradientCard className="col-span-12 sm:col-span-6 md:col-span-4">
-                        <a className="group relative block rounded-xl overflow-hidden focus:outline-none" href="#">
-                            <div className="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
-                                <img className="group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="https://images.unsplash.com/photo-1598929438701-ef29ab0bb61a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80" alt="Masonry Cards Image" />
-                            </div>
-                            <div className="absolute bottom-0 start-0 end-0">
-                                <div className="text-sm font-semibold text-white rounded-lg bg-gray-800 p-4 md:text-xl dark:bg-neutral-800 dark:text-neutral-200">
-                                    Data at Preline
-                                </div>
-                            </div>
-                        </a>
-                    </NeonGradientCard>
-
-                    <NeonGradientCard className="col-span-12 sm:col-span-6 md:col-span-4">
-                        <a className="group relative block rounded-xl overflow-hidden focus:outline-none" href="#">
-                            <div className="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
-                                <img className="group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="https://images.unsplash.com/photo-1467043153537-a4fba2cd39ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80" alt="Masonry Cards Image" />
-                            </div>
-                            <div className="absolute bottom-0 start-0 end-0">
-                                <div className="text-sm font-semibold text-white rounded-lg bg-gray-800 p-4 md:text-xl dark:bg-neutral-800 dark:text-neutral-200">
-                                    Empowered management
-                                </div>
-                            </div>
-                        </a>
-                    </NeonGradientCard>
+                    </div>
+                    ))}
+                   
                 </div>
             </div>
-        </div>
+        </section>
+
+        // <section id="projects">
+
+        // </section>
     )
 }

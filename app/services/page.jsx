@@ -19,7 +19,7 @@ export default function Services() {
                 <div class="grid md:grid-cols-2 gap-12">
                     <div class="lg:w-3/4">
                         <p class="mt-3 text-gray-300 dark:text-neutral-400">
-                            We help businesses bring ideas to life in the digital world, by designing and implementing the technology tools that they need to win.
+                            I am a freelancer specializing in <strong>Web Development</strong>, <strong>API Development</strong>, and <strong>Android Development</strong>. I help businesses build functional and efficient digital solutions tailored to their needs.
                         </p>
                     </div>
 
@@ -33,7 +33,7 @@ export default function Services() {
                                     Industry-leading documentation
                                 </h3>
                                 <p class="mt-1 text-gray-400 dark:text-neutral-400">
-                                    Our documentation and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.
+                                    I deliver clean, well-documented code to ensure smooth integration and collaboration in all stages of development.
                                 </p>
                             </div>
                         </div>
@@ -44,10 +44,10 @@ export default function Services() {
                             </span>
                             <div class="grow">
                                 <h3 class="text-base sm:text-lg font-semibold text-gray-200 dark:text-neutral-200">
-                                    Developer community support
+                                    Strong API Development
                                 </h3>
                                 <p class="mt-1 text-gray-400 dark:text-neutral-400">
-                                    We actively contribute to open-source projects—giving back to the community through development, patches, and sponsorships.
+                                    I design and develop robust, secure, and scalable APIs that seamlessly connect various systems and applications.
                                 </p>
                             </div>
                         </div>
@@ -58,10 +58,10 @@ export default function Services() {
                             </span>
                             <div class="grow">
                                 <h3 class="text-base sm:text-lg font-semibold text-gray-200 dark:text-neutral-200">
-                                    Simple and affordable
+                                    Android Development Expertise
                                 </h3>
                                 <p class="mt-1 text-gray-400 dark:text-neutral-400">
-                                    From boarding passes to movie tickets, there's pretty much nothing you can't store with Preline.
+                                    I create high-quality Android applications with a focus on performance, usability, and user satisfaction.
                                 </p>
                             </div>
                         </div>
