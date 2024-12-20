@@ -20,9 +20,10 @@ const Photo = () => {
                     transition: { delay: 1.4, duration: 0.4, ease: "easeInOut" }
                 }}
             >
-                <div className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px]">
+                <div className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px]" style={{position: 'relative'}}>
                     <Image
                         src="/assets/photo.png"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         priority
                         quality={100}
                         fill
