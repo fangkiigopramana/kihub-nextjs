@@ -7,7 +7,31 @@ import { FaArrowRight, FaDemocrat, FaPlay } from "react-icons/fa";
 export default async function Projects() {
     try {
         // Fetching the data from API
-        const res = await fetch('https://kihub.site/api/projects', { cache: 'no-store' });
+        const res = { 
+            ok: true, 
+            json: async () => ({
+            data: [
+                {
+                category: "Web Development",
+                name: "Portfolio Website",
+                tech_stacks: "React, Next.js, Tailwind CSS",
+                demo_url: "portfolio-demo.com"
+                },
+                {
+                category: "Mobile App",
+                name: "Task Manager",
+                tech_stacks: "React Native, Redux",
+                demo_url: "taskmanager-demo.com"
+                },
+                {
+                category: "Game Development",
+                name: "Space Invaders",
+                tech_stacks: "Unity, C#",
+                demo_url: "spaceinvaders-demo.com"
+                }
+            ]
+            })
+        };
         if (!res.ok) throw new Error('Failed to fetch experiences data.');
         const { data: projects } = await res.json(); // Extract "data" from response
         return (

@@ -39,7 +39,7 @@ export default function Nav() {
                     href={link.path}
                     key={index}
                     className={`${link.path === `#${activeSection}` ? "text-accent border-b-2 border-accent" : ""
-                        } capitalize font-medium hover:text-accent transition-all`}
+                        } capitalize text-sm font-medium hover:text-accent transition-all`}
                 >
                     {link.name}
                 </Link>

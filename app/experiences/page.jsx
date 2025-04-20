@@ -4,7 +4,20 @@ import { FaLinkedin } from "react-icons/fa";
 export default async function Experiences() {
     try {
         // Fetching the data from API
-        const res = await fetch('https://kihub.site/api/experiences', { cache: 'no-store' });
+        let res = { ok: true, json: async () => ({ data: [
+            {
+            duration: "Jan 2020 - Dec 2021",
+            company_name: "Tech Corp",
+            job_title: "Software Engineer",
+            description: "Developed web applications//Collaborated with cross-functional teams//Improved system performance"
+            },
+            {
+            duration: "Feb 2018 - Dec 2019",
+            company_name: "Innovate Ltd",
+            job_title: "Frontend Developer",
+            description: "Designed user interfaces//Implemented responsive designs//Optimized frontend performance"
+            }
+        ]}) };
         if (!res.ok) throw new Error('Failed to fetch experiences data.');
         const { data: experiences } = await res.json(); // Extract "data" from response
 
